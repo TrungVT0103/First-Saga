@@ -1,0 +1,28 @@
+.wrapAdmin {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header" "sidebar main";
+    min-height: 100vh;
+}
+
+.adminHeader {
+    height: 64px;
+    border-bottom: solid 1px grey;
+}
+
+.adminContent {
+    display: flex;
+    min-height: calc(100vh - 64px);
+}
+
+.adminSidebar {
+    flex-basis: 20%;
+    border-right: solid 1px grey;
+}
+
+.adminMain {
+    flex-grow: 1;
+    flex-basis: 20%;
+    grid-area: 'main';
+}
